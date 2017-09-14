@@ -7,7 +7,7 @@ from subprocess import call
 
 print("Installing clamAV for launchd")
 
-if path.exists('/usr/local/bin/freshclam1') and path.exists('/usr/local/bin/clamscan'):
+if path.exists('/usr/local/bin/freshclam') and path.exists('/usr/local/bin/clamscan'):
     print("ClamAV installed")
 else:
     print("Can't find freshclam or clamscan")
