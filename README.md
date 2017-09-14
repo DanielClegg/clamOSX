@@ -4,7 +4,12 @@ Launchd plist file for running clamscan anti virus and freshclam automatically o
 ## Requirements
 ClamAV http://www.clamav.net/downloads
 
-### Installation
+### Installation (auto-ish)
+
+just run ```setup.py``` from the terminal, then log out and back in.
+
+
+### Installation (manual)
 Either download directly from http://www.clamav.net/downloads or better use 
 ```brew install clamav``` see here for [Installing Brew](https://brew.sh)
 
