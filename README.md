@@ -28,4 +28,4 @@ Both services log to ```/Users/Shared/freshclam.log``` and ```/Users/Shared/clam
 
 ### Configuration
 
-```clamscan`` is confgiured to do a recursive scan on the users home directory ```~/``` this can be easily changed by 
+```clamscan``` is confgiured to do a recursive scan on the users home directory ```~/``` this can be easily changed by 
