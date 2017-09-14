@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>local.clamscan.job</string>
+	<key>Program</key>
+	<string>/usr/local/bin/clamscan</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/clamscan -r ~/</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>~/log/clamscan.err</string>
+	<key>StandardOutPath</key>
+	<string>~/log/clamscan.log</string>
+	<key>StartInterval</key>
+	<integer>36000</integer>
+</dict>
+</plist>
