@@ -5,6 +5,11 @@ import shutil
 from os import path, getenv
 from subprocess import call
 
+def copy_conf(name, dest):
+    print("Copying {}... ".format(name), end="")
+    shutil.copy2("./{}".format(name), dest)
+    print("done")
+
 print("Installing clamAV for launchd")
 
 if path.exists('/usr/local/bin/freshclam') and path.exists('/usr/local/bin/clamscan'):
@@ -19,17 +24,14 @@ else:
 if path.exists('/usr/local/etc/clamav/freshclam.conf'):
     ans = raw_input("freshclam.conf already exists, do you want to overwrite with the repos version? (y/n) ")
     if str(ans).lower().startswith('y'):
-        print("Copying freshclam.conf... ", end="")
-        shutil.copy2("./freshclam.conf", "/usr/local/etc/clamav/")
-        print("done")
+        copy_conf("freshclam.conf", "/usr/local/etc/clamav/")
+else:
+    copy_conf("freshclam.conf","/usr/local/etc/clamav/")
 
 home_dir = getenv("HOME")
 
 launchagents_dest_dir = home_dir + "/Library/LaunchAgents/"
 
-print("Copying freshclam.plist... ", end="")
-shutil.copy2("./freshclam.plist", launchagents_dest_dir)
-print("done")
-print("Copying clamscan.plist... ", end='')
-shutil.copy2("./clamscan.plist", launchagents_dest_dir)
-print("done")
+copy_conf("freshclam.plist", launchagents_dest_dir)
+copy_conf("clamscan.plist", launchagents_dest_dir)
+
