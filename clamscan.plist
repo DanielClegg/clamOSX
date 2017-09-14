@@ -8,14 +8,14 @@
 	<array>
 		<string>sh</string>
 		<string>-c</string>
-		<string>/usr/local/bin/clamscan $HOME</string>
+		<string>/usr/local/bin/clamscan -r $HOME</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>StandardErrorPath</key>
-	<string>/Users/Shared/clamscan.err</string>
+	<string>/Users/danielclegg/log/clamscan.err</string>
 	<key>StandardOutPath</key>
-	<string>/Users/Shared/clamscan.log</string>
+	<string>/Users/danielclegg/log/clamscan.log</string>
 	<key>StartInterval</key>
 	<integer>36000</integer>
 </dict>
