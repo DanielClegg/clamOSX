@@ -24,4 +24,4 @@ You can check to see if there are installed by ```launchctl list | grep local```
 
 ### Loggging
 
-Both services log to ```~/log/freshclam.log``` and ```~/log/clamscan.log```
+Both services log to ```/Users/Shared/log/freshclam.log``` and ```/Users/Shared/log/clamscan.log```
