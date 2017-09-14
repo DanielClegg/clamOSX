@@ -9,9 +9,9 @@
 	<key>RunAtLoad</key>
 	<true/>
 	<key>StandardErrorPath</key>
-	<string>~/log/freshclam.err</string>
+	<string>/Users/Shared/freshclam.err</string>
 	<key>StandardOutPath</key>
-	<string>~/log/freshclam.log</string>
+	<string>/Users/Shared/freshclam.log</string>
 	<key>StartInterval</key>
 	<integer>3600</integer>
 </dict>

@@ -13,9 +13,9 @@
 	<key>RunAtLoad</key>
 	<true/>
 	<key>StandardErrorPath</key>
-	<string>/Users/danielclegg/log/clamscan.err</string>
+	<string>/Users/Shared/clamscan.err</string>
 	<key>StandardOutPath</key>
-	<string>/Users/danielclegg/log/clamscan.log</string>
+	<string>/Users/Shared/clamscan.log</string>
 	<key>StartInterval</key>
 	<integer>36000</integer>
 </dict>
